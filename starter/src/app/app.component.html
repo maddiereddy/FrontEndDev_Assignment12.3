@@ -1,0 +1,9 @@
+<h1>Custom Pipe for filtering names</h1>
+<br><br>
+<ul>
+    <li *ngFor="let friend of (friends | filterNames:'A')">
+        <span><b><u>Name:</u></b> {{friend.name}},</span>
+        <span><b><u> Hobby:</u></b> {{friend.hobby}}</span>
+        <br><br>
+    </li>
+</ul>
